@@ -5,7 +5,7 @@ mutable struct BinaryNode{K, V}
     right::Union{BinaryNode, Nothing}
 end
 
-function NewNode(k, v)
+function NewBinaryNode(k, v)
     n = BinaryNode(k, v, nothing, nothing)
     return n
 end
@@ -45,5 +45,8 @@ function insertTo(node::BinaryNode, target::BinaryNode)
 end
 
 function removeFrom(node::BinaryNode, target::BinaryNode)
-    
+
+end
+
+function findFrom(node::BinaryNode{K, V}, key::K)
 end
